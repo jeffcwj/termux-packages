@@ -27,7 +27,7 @@ jobs:
       - name: Git clone
         uses: actions/checkout@v3
       - name: Create bootstrap archive
-        run: sudo ./scripts/build-bootstraps.sh -f --architectures ${{ matrix.arch }}
+        run: ./scripts/generate-bootstraps.sh --architectures ${{ matrix.arch }}
       - name: Store artifacts
         uses: actions/upload-artifact@v3
         with:
