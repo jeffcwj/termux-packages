@@ -40,7 +40,7 @@ TERMUX_PREFIX="${TERMUX_BASE_DIR}/usr"
 # Package name for the packages hosted on the repo.
 # This must only equal TERMUX_APP_PACKAGE if using custom repo that
 # has packages that were built with same package name.
-TERMUX_REPO_PACKAGE="com.termux"
+TERMUX_REPO_PACKAGE="com.samp.game"
 
 # Termux repo urls.
 TERMUX_REPO_URL=(
