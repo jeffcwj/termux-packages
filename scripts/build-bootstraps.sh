@@ -425,11 +425,7 @@ main() {
 		# Core utilities.
 		PACKAGES+=("bash") # Used by `termux-bootstrap-second-stage.sh`
 		PACKAGES+=("bzip2")
-		if ! ${BOOTSTRAP_ANDROID10_COMPATIBLE}; then
-			PACKAGES+=("command-not-found")
-		else
-			PACKAGES+=("proot")
-		fi
+		PACKAGES+=("proot")
 		PACKAGES+=("coreutils")
 		PACKAGES+=("dash")
 		PACKAGES+=("diffutils")
@@ -453,7 +449,7 @@ main() {
 		PACKAGES+=("dos2unix")
 		PACKAGES+=("inetutils")
 		PACKAGES+=("lsof")
-		PACKAGES+=("nano")
+		# PACKAGES+=("nano")
 		PACKAGES+=("net-tools")
 		PACKAGES+=("patch")
 		PACKAGES+=("unzip")
