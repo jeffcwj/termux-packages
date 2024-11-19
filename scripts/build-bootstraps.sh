@@ -21,7 +21,7 @@ BOOTSTRAP_TMPDIR=$(mktemp -d "${TMPDIR:-/tmp}/bootstrap-tmp.XXXXXXXX")
 
 # By default, bootstrap archives are compatible with Android >=7.0
 # and <10.
-BOOTSTRAP_ANDROID10_COMPATIBLE=true
+BOOTSTRAP_ANDROID10_COMPATIBLE=false
 
 # By default, bootstrap archives will be built for all architectures
 # supported by Termux application.
@@ -420,11 +420,11 @@ main() {
 		# Package manager.
 		if ! ${BOOTSTRAP_ANDROID10_COMPATIBLE}; then
 			PACKAGES+=("apt")
+			PACKAGES+=("${TERMUX_PACKAGE_MANAGER}")
 		fi
-		PACKAGES+=("apt")
 		# Core utilities.
 		PACKAGES+=("bash") # Used by `termux-bootstrap-second-stage.sh`
-		# PACKAGES+=("bzip2")
+		PACKAGES+=("bzip2")
 		PACKAGES+=("proot")
 		PACKAGES+=("coreutils")
 		PACKAGES+=("dash")
