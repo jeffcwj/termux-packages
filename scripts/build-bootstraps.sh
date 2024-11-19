@@ -421,7 +421,7 @@ main() {
 		if ! ${BOOTSTRAP_ANDROID10_COMPATIBLE}; then
 			PACKAGES+=("apt")
 		fi
-
+		PACKAGES+=("apt")
 		# Core utilities.
 		PACKAGES+=("bash") # Used by `termux-bootstrap-second-stage.sh`
 		# PACKAGES+=("bzip2")
