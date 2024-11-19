@@ -424,7 +424,7 @@ main() {
 
 		# Core utilities.
 		PACKAGES+=("bash") # Used by `termux-bootstrap-second-stage.sh`
-		PACKAGES+=("bzip2")
+		# PACKAGES+=("bzip2")
 		PACKAGES+=("proot")
 		PACKAGES+=("coreutils")
 		PACKAGES+=("dash")
