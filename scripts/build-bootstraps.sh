@@ -419,15 +419,16 @@ main() {
 
 		# Package manager.
 		if ! ${BOOTSTRAP_ANDROID10_COMPATIBLE}; then
-			PACKAGES+=("apt")
-			PACKAGES+=("${TERMUX_PACKAGE_MANAGER}")
+			# PACKAGES+=("apt")
 		fi
 		# Core utilities.
 		PACKAGES+=("bash") # Used by `termux-bootstrap-second-stage.sh`
 		# PACKAGES+=("bzip2") # cannot compile
 		PACKAGES+=("proot")
+  		PACKAGES+=("proot-distro")
 		PACKAGES+=("coreutils")
 		PACKAGES+=("dash")
+  		PACKAGES+=("curl")
 		PACKAGES+=("diffutils")
 		PACKAGES+=("findutils")
 		PACKAGES+=("gawk")
@@ -442,6 +443,7 @@ main() {
 		PACKAGES+=("termux-keyring")
 		PACKAGES+=("termux-tools")
 		PACKAGES+=("util-linux")
+  		PACKAGES+=("xz-utils")
 
 		# Additional.
 		PACKAGES+=("ed")
