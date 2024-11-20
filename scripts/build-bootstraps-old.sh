@@ -491,10 +491,11 @@ main() {
 		EXTRACTED_PACKAGES=()
 
 		# Package manager.
-		if ! ${BOOTSTRAP_ANDROID10_COMPATIBLE}; then
-			PACKAGES+=("apt")
-			PACKAGES+=("${TERMUX_PACKAGE_MANAGER}")
-		fi
+		# if ! ${BOOTSTRAP_ANDROID10_COMPATIBLE}; then
+		# 	PACKAGES+=("apt")
+		# 	# PACKAGES+=("${TERMUX_PACKAGE_MANAGER}")
+		# fi
+  		PACKAGES+=("apt")
 
 		# Core utilities.
 		PACKAGES+=("bash")
@@ -516,9 +517,9 @@ main() {
 		PACKAGES+=("tar")
 		PACKAGES+=("termux-exec")
 		PACKAGES+=("termux-keyring")
-		if [ ${TERMUX_PACKAGE_MANAGER} = "apt" ]; then
-			PACKAGES+=("termux-keyring")
-		fi
+		# if [ ${TERMUX_PACKAGE_MANAGER} = "apt" ]; then
+		# 	PACKAGES+=("termux-keyring")
+		# fi
 		PACKAGES+=("termux-tools")
 		PACKAGES+=("util-linux")
 		PACKAGES+=("xz-utils")
@@ -526,15 +527,15 @@ main() {
 		# Additional.
 		PACKAGES+=("ed")
 		PACKAGES+=("debianutils")
-		if [ ${TERMUX_PACKAGE_MANAGER} = "apt" ]; then
-			PACKAGES+=("debianutils")
-		fi
+		# if [ ${TERMUX_PACKAGE_MANAGER} = "apt" ]; then
+		# 	PACKAGES+=("debianutils")
+		# fi
 		PACKAGES+=("dos2unix")
 		PACKAGES+=("inetutils")
 		PACKAGES+=("lsof")
 		PACKAGES+=("neofetch")
 		# 删掉了报错的nano 改成neovim
-		PACKAGES+=("neovim")
+		# PACKAGES+=("neovim")
 		PACKAGES+=("net-tools")
 		PACKAGES+=("patch")
 		PACKAGES+=("unzip")
