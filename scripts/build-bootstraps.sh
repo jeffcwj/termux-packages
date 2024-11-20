@@ -418,9 +418,9 @@ main() {
 		EXTRACTED_PACKAGES=()
 
 		# Package manager.
-		if ! ${BOOTSTRAP_ANDROID10_COMPATIBLE}; then
-			# PACKAGES+=("apt")
-		fi
+		# if ! ${BOOTSTRAP_ANDROID10_COMPATIBLE}; then
+		# 	PACKAGES+=("apt")
+		# fi
 		# Core utilities.
 		PACKAGES+=("bash") # Used by `termux-bootstrap-second-stage.sh`
 		# PACKAGES+=("bzip2") # cannot compile
