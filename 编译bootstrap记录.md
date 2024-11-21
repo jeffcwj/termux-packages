@@ -11,10 +11,6 @@
 export http_proxy="http://192.168.31.233:7897"
 export https_proxy="http://192.168.31.233:7897"
 export no_proxy="localhost,127.0.0.1,::1"
-
-export http_proxy="http://192.168.52.232:7897"
-export https_proxy="http://192.168.52.232:7897"
-export no_proxy="localhost,127.0.0.1,::1"
 ```
 
 3.`./scripts/build-bootstraps.sh  -f --architectures aarch64`
