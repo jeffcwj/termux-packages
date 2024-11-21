@@ -9,6 +9,8 @@
 `export http_proxy https_proxy`
 
 3.`./scripts/build-bootstraps.sh  -f --architectures aarch64`
+不重新编译 `./scripts/build-bootstraps.sh --architectures aarch64`
+`./scripts/build-bootstraps-old.sh --architectures aarch64`
 
 
 >缺ndk\
