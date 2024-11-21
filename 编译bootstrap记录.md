@@ -7,10 +7,17 @@
 
 >网络问题走代理\
 `export http_proxy https_proxy`
+```bash
+export http_proxy="http://192.168.31.233:7897"
+export https_proxy="http://192.168.31.233:7897"
+export no_proxy="localhost,127.0.0.1,::1"
+```
 
 3.`./scripts/build-bootstraps.sh  -f --architectures aarch64`
 不重新编译 `./scripts/build-bootstraps.sh --architectures aarch64`
 `./scripts/build-bootstraps-old.sh --architectures aarch64`
+
+
 
 
 >缺ndk\
