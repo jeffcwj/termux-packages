@@ -526,6 +526,11 @@ main() {
 		PACKAGES+=("xz-utils")
 
 		# Additional.
+  		PACKAGES+=("libandroid-shmem")
+    		PACKAGES+=("libandroid-spawn")
+          	PACKAGES+=("libjpeg-turbo")
+	        PACKAGES+=("openjdk-17")
+	 	PACKAGES+=("apksigner")
 		PACKAGES+=("ed")
 		PACKAGES+=("debianutils")
 		# if [ ${TERMUX_PACKAGE_MANAGER} = "apt" ]; then
