@@ -501,6 +501,7 @@ main() {
 		PACKAGES+=("bash")
 		PACKAGES+=("bzip2")
 		PACKAGES+=("proot")
+  		PACKAGES+=("proot-distro")
 		# 删掉了报错的command not found
 		PACKAGES+=("coreutils")
 		PACKAGES+=("curl")
