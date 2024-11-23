@@ -495,7 +495,7 @@ main() {
 		# 	PACKAGES+=("apt")
 		# 	# PACKAGES+=("${TERMUX_PACKAGE_MANAGER}")
 		# fi
-  		PACKAGES+=("apt")
+  		# PACKAGES+=("apt")
 
 		# Core utilities.
 		PACKAGES+=("bash")
@@ -505,6 +505,7 @@ main() {
 		PACKAGES+=("coreutils")
 		PACKAGES+=("curl")
 		PACKAGES+=("dash")
+  		PACKAGES+=("dpkg")
 		PACKAGES+=("diffutils")
 		PACKAGES+=("findutils")
 		PACKAGES+=("gawk")
